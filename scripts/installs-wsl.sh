@@ -87,6 +87,7 @@ PYTHON_VERSION=3.11
 echo "Update Ubuntu and install required packages"
 sudo apt update
 sudo apt install -y gcc make build-essential openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev python3 python3-pip wget liblzma-dev curl xz-utils libncurses5-dev python3-openssl llvm sqlite
+echo -e "\n\n"
 
 echo "Install pyenv"
 curl https://pyenv.run | bash
@@ -146,25 +147,25 @@ echo -e "\n\n"
 
 
 echo "Installing VS Code Extensions"
-code --install-extension ms-python.python --force
-code --install-extension ms-python.vscode-pylance --force
-code --install-extension ms-python.pylint --force
-code --install-extension njpwerner.autodocstring --force
-code --install-extension alexcvzz.vscode-sqlite --force
-code --install-extension streetsidesoftware.code-spell-checker --force
-code --install-extension ms-vscode-remote.remote-wsl --force
-code --install-extension formulahendry.auto-rename-tag --force
-code --install-extension formulahendry.code-runner --force
-code --install-extension mikoz.black-py --force
-code --install-extension aeschli.vscode-css-formatter --force
-code --install-extension batisteo.vscode-django --force
-code --install-extension janisdd.vscode-edit-csv --force
-code --install-extension eamodio.gitlens --force
-code --install-extension oderwat.indent-rainbow --force
-code --install-extension christian-kohler.path-intellisense --force
-code --install-extension timonwong.shellcheck --force
-code --install-extension meganrogge.template-string-converter --force
-code --install-extension samuelcolvin.jinjahtml --force
+code --install-extension ms-python.python --force \
+--install-extension ms-python.vscode-pylance --force \
+--install-extension ms-python.pylint --force \
+--install-extension njpwerner.autodocstring --force \
+--install-extension alexcvzz.vscode-sqlite --force \
+--install-extension streetsidesoftware.code-spell-checker --force \
+--install-extension ms-vscode-remote.remote-wsl --force \
+--install-extension formulahendry.auto-rename-tag --force \
+--install-extension formulahendry.code-runner --force \
+--install-extension mikoz.black-py --force \
+--install-extension aeschli.vscode-css-formatter --force \
+--install-extension batisteo.vscode-django --force \
+--install-extension janisdd.vscode-edit-csv --force \
+--install-extension eamodio.gitlens --force \
+--install-extension oderwat.indent-rainbow --force \
+--install-extension christian-kohler.path-intellisense --force \
+--install-extension timonwong.shellcheck --force \
+--install-extension meganrogge.template-string-converter --force \
+--install-extension samuelcolvin.jinjahtml --force
 
 echo -e "\n\n"
 
