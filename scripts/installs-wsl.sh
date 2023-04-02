@@ -21,8 +21,10 @@ sudo apt install -y curl file build-essential libssl-dev libgtk2.0-0 libgtk-3-0 
 
 # Switch to Zsh
 ZSH_FOLDER=$HOME/.oh-my-zsh
-if [ ! -d "$FOLDER" ]; then    
+if [ ! -d "$ZSH_FOLDER" ]; then
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+else
+  echo "Oh My Zsh already installed"
 fi
 
 current_shell=$(echo $SHELL)
